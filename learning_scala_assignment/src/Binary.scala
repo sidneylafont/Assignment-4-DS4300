@@ -15,7 +15,12 @@ object Binary {
   }
 
   def weight(b: String): Int = {
-    b.toArray.groupBy(identity).mapValues(_.size)('1')
+    try {
+      b.toArray.groupBy(identity).mapValues(_.size)('1')
+    }
+    catch {
+      case _: Throwable => return 0;
+    }
   }
 
   def main() = {
