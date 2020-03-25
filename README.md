@@ -1,4 +1,4 @@
-2Output for Question 2:
+Output for Question 2:
 
 What is the 32-bit binary for 1,234,567,890?
 01001001100101100000001011010010
