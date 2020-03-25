@@ -1,6 +1,6 @@
 import breeze.plot._
 
-object Binary {
+object Binary extends App{
 
   def toBinary(x: Int, bits: Int): String = {
     if (x == 0) {
@@ -23,16 +23,14 @@ object Binary {
     }
   }
 
-  def main() = {
-    val bin = toBinary(37, 8)
-    print(weight(bin))
+  val bin = toBinary(37, 8)
+  print(weight(bin))
 
-    val xs = Range(0,1025)
-    val ys = xs.map(x=>weight(toBinary(x,8)))
+  val xs = Range(0,1025)
+  val ys = xs.map(x=>weight(toBinary(x,8)))
 
-    val fig = Figure()
-    val plt = fig.subplot(0)
-    plt += plot(xs,ys)
-    fig.refresh()
-  }
+  val fig = Figure()
+  val plt = fig.subplot(0)
+  plt += plot(xs,ys)
+  fig.refresh()
 }
