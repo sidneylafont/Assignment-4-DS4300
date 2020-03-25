@@ -5,7 +5,7 @@ class Partition {
     for( i <- 0 to records) {
       val start = i % startN
       val end = i % endN
-      if (start == end) {
+      if (start != end) {
         numReassigned += 1
       }
     }

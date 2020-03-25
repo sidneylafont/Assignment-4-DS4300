@@ -17,5 +17,5 @@ Compute moved(1000000, 100, 107):
 
 Output for Question 5:
 
-Store the following graph in your graph database and test your database by finding the shortest path from x to y.
+Store the following graph in your graph database and test your database by finding the shortest path from x to y:
 List(x, j, r, y)
