@@ -5,7 +5,7 @@ What is the 32-bit binary for 1,234,567,890?
 
 
  Produce a plot of the weight of binary numbers from 0
-to 1024.
+to 1024: screenshot included in binary-graph.png
 
 
 
